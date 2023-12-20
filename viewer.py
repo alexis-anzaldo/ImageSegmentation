@@ -43,14 +43,13 @@ class ImageClassifier:
             self.load_image()
 
     def do_something(self):
-        # Add function
+        # TODO: Add function
         pass
 
 if __name__ == "__main__":
     root = tk.Tk()
     root.title("Image Viewer")
 
-    # Replace 'image_folder' with the path to the folder containing your images
     image_folder = filedialog.askdirectory(title="Select Image Folder")
     image_paths = [os.path.join(image_folder, file) for file in os.listdir(image_folder) if file.lower().endswith(('.png', '.jpg', '.jpeg'))]
 
